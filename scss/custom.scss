@@ -1,0 +1,121 @@
+// ---------------------------- edits on bootstrap's files ------------------------------
+$active: rgb(128, 136, 143);
+$newblack: black;
+$newwhite: white;
+
+
+/* pagination - Gallery */
+
+$pagination-color:                  $newblack;
+
+$pagination-focus-color:            $active;
+
+$pagination-hover-color:            $newwhite;
+$pagination-hover-bg:               $active;
+$pagination-hover-border-color:     $active;
+
+$pagination-active-color:           $newwhite;
+$pagination-active-bg:              $active;
+
+$pagination-disabled-color:         $active;
+$pagination-disabled-bg:            $active;
+
+.mb-6 {
+    margin-bottom: 5rem;
+}
+
+.mt-6 {
+    margin-top: 5rem;
+}
+
+/* map - About Us */
+$position-values: (
+    0: 0,
+    5: 5%,
+    10: 10%,
+    15: 15%,
+    20: 20%,
+    25: 25%,
+    30: 30%,
+    35: 35%,
+    40: 40%,
+    45: 45%,
+    50: 50%,
+    55: 55%,
+    60: 60%,
+    65: 65%,
+    70: 70%,
+    75: 75%,
+    80: 80%,
+    85: 85%,
+    90: 90%,
+    95: 95%,
+    100: 100%,
+);
+
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+
+
+
+// ---------------------------- other edits ------------------------------
+
+@import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap');
+
+/* general header and footer */
+body {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#h1-restname {
+    font-family: 'Hachi Maru Pop', cursive;
+}
+
+.dropdown-toggle::after {
+    content: none;
+}
+
+#p-footer {
+    font-size: 10px;
+ }
+
+ .new-bg {
+     background-color: white;
+ }
+
+
+/* home */
+.no-padding {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.img-color {
+    filter: brightness(0) invert(1);
+}
+
+
+/* menu */
+.btn-font {
+    font-size: 12px;
+}
+
+/* about us */
+.map-container-2 {
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+
+.map-container-2 iframe {
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
