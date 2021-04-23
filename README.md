@@ -9,7 +9,7 @@ Jann Basso
 - Git / Github
 
 ## **Result**
-Check the final result [here]()
+(need deployment)
 
 
 ## Goal

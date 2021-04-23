@@ -16,7 +16,13 @@
 
         .container-box-element {
             position: absolute;
-            top: 0;
+            top: 100px;
+            left: 10%;
+        }
+
+        .container-box-element1 {
+            position: absolute;
+            top: 10px;
         }
 
         .tdwidth {
@@ -47,10 +53,10 @@ if(isset($_SESSION['username']) && isset($_SESSION['password'])) {
     <!------------------------ CONTENT ------------------------>
     <main> 
     
-        <div class="row d-flex justify-content-center" id="container-box">
+       <div class="row d-flex justify-content-center" id="container-box">
           
             <!-- image -->
-            <div class="col-12 container-box-element" id="homebackofficediv">
+            <div class="col-12 container-box-element1" id="homebackofficediv">
                 <img src="../img/backoffice.jpg" class="img-fluid">
 
                 <div class="row mt-5 d-flex justify-content-center">
@@ -191,7 +197,7 @@ if(isset($_SESSION['username']) && isset($_SESSION['password'])) {
                 <!-- input field -->
                 <div class="row col-7">
                     <form action="" method="post" enctype="multipart/form-data">
-                        <table class="table">              
+                        <table class="table">            
                             <tr>
                                 <td><label for="chooseimg">Image</label></td>
                                 <td><input type="file" name="chooseimg" class="tdwidth"><?php //echo $update_image; ?></td>
